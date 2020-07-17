@@ -1,4 +1,4 @@
-        @import"components/colors";
+    @import"components/colors";
     @import"components/tipos";
     * {
         margin: 0;
@@ -17,6 +17,7 @@
         text-transform: uppercase;
         font-size: $sub;
         color: $back;
+        padding-bottom: 100px;
     }
     
     .form {
@@ -77,3 +78,4 @@
             outline: none;
             box-sizing: border-box;
         }
+    }
