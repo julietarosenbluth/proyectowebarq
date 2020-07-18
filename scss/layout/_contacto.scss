@@ -1,81 +1,94 @@
-    @import"components/colors";
-    @import"components/tipos";
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: none;
-        color: $base;
-    }
-    
-    h3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: $family;
-        text-transform: uppercase;
-        font-size: $sub;
-        color: $back;
-        padding-bottom: 100px;
-    }
-    
-    .form {
-        height: 700px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@import"components/colors";
+@import"components/tipos";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: none;
+    color: $base;
+}
+
+#contacto {
+    font-family: $family;
+    text-transform: uppercase;
+    font-size: $sub;
+    color: $back;
+    padding-bottom: 5px;
+}
+
+.form {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .suscripcion {
         p {
             font-size: $subtitle;
             align-items: center;
-            padding-top: 15px;
             padding-left: 40px;
-        }
-        .group {
-            margin: 20px;
-            width: 100%;
-            position: relative;
-            text-align: center;
+            padding-bottom: 40px;
         }
     }
-    
+}
+
+.group {
+    margin: 20px;
+    width: 100%;
+    position: relative;
+    color: $black;
+    label {
+        color: $back;
+        font-size: $foot;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+}
+
+input {
+    font-size: $font;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $hover;
+}
+
+input:focus {
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    font-size: $subtitle;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $hover;
+    textarea:focus {
+        width: 100%;
+        outline: none;
+        box-sizing: border-box;
+    }
+}
+
+.boton {
+    font-size: $foot;
+    display: block;
+    width: 70%;
+    border: none;
+    padding-left: 150px;
     input {
-        font-size: $font;
-        .button {
-            padding: 9px 25px;
-            background-color: $back;
-            color: $white;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease 0s;
-        }
-        label {
-            color: $back;
-            font-size: $subtitle;
-            position: absolute;
-            align-content: center;
-            left: 10px;
-            top: 10px;
-        }
-        textarea {
-            font-size: $subtitle;
-            padding: 10px 10px 10px 5px;
-            display: block;
-            width: 100%;
-            border: none;
-            border-bottom: 1px solid $hover;
-            textarea:focus {
-                width: 100%;
-                outline: none;
-                box-sizing: border-box;
-            }
-        }
-        input:focus {
-            width: 100%;
-            outline: none;
-            box-sizing: border-box;
-        }
+        padding: 9px 25px;
+        background-color: $back;
+        color: $white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
     }
+}

@@ -7,9 +7,9 @@
     background-color: none;
 }
 
-.float,
-.button,
-.nav {
+.flotante,
+.bot,
+.ct {
     position: absolute;
 }
 
@@ -24,7 +24,7 @@
     display: none;
 }
 
-.button {
+.bot {
     z-index: 999;
     width: 43px;
     height: 43px;
@@ -35,7 +35,7 @@
     cursor: pointer;
 }
 
-button:before {
+.bot:before {
     position: absolute;
     top: 20px;
     left: 9px;
@@ -45,7 +45,7 @@ button:before {
     background: #ffffff;
 }
 
-.button:after {
+.bot:after {
     position: absolute;
     top: 20px;
     left: 9px;
@@ -55,7 +55,7 @@ button:before {
     background: $white;
 }
 
-.nav {
+.ct {
     transform: translateY (10%);
     opacity: 0;
     top: 13px;
@@ -68,7 +68,7 @@ button:before {
     box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.nav a {
+.ct a {
     text-align: center;
     display: block;
     margin: 20px 0;
@@ -77,12 +77,12 @@ button:before {
     text-transform: uppercase;
 }
 
-#toggle:checked~.nav {
+#toggle:checked~.ct {
     opacity: 1;
     transform: translateY(10%);
 }
 
-#toggle:checked~.button {
+#toggle:checked~.bot {
     transform: rotate(135deg);
     box-shadow: 0 0 00 transparent;
 }

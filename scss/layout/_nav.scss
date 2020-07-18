@@ -13,7 +13,8 @@
 
 header {
     display: grid;
-    grid-template-columns: 1fr, 4fr, 1fr;
+    position: sticky;
+    scroll-behavior: smooth;
     grid-template-areas: "contenedorlogo contenedornav contenedorcontacto";
     border-bottom: solid;
     border-width: 1px;
