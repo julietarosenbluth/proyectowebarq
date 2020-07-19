@@ -1,150 +1,148 @@
-@import"components/colors";
-@import"components/tipos";
-@import"components/button";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: none;
-}
-
-
-/*HEADER*/
-
-header {
-    display: grid;
-    position: sticky;
-    scroll-behavior: smooth;
-    grid-template-areas: "contenedorlogo contenedornav contenedorcontacto";
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: $hover;
-}
-
-
-/*LOGO*/
-
-.contenedorlogo {
-    margin-top: 15px;
-    justify-self: center;
-    align-self: center;
-    padding: 1.6rem;
-}
-
-
-/*NAVEGADOR*/
-
-.contenedornav {
-    justify-self: center;
-    align-self: center;
-}
-
-.contenedornav {
-    align-self: center;
-    list-style: none;
-    .navbar li {
-        display: inline-block;
-        padding: 20px 30px;
-        a {
-            color: $base;
-            font-size: $font;
-            font-style: none;
-            transition: all 0.3s ease 0s;
-        }
-        a:hover {
-            color: $hover;
-        }
-    }
-}
-
-a:hover {
-    color: $hover;
-}
-
-.menuhamburguesa {
-    .fas {
-        color: $white
-    }
-}
-
-
-/*BOTONCONTACTO*/
-
-.contenedorcontacto {
-    justify-self: center;
-    align-self: center;
-    button {
-        padding: 9px 25px;
-        background-color: $back;
-        color: $white;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-    }
-}
-
-button:hover {
-    background-color: $hover;
-    color: $white;
-}
-
-@media only screen and (max-width:767px) {
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "contenedornav contenedorlogo contenedorcontacto";
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-    }
-    .contenedorlogo {
-        grid-area: contenedorlogo;
-        justify-self: center;
-        align-self: center;
-        padding: 1.6rem;
-    }
-    .contenedornav {
-        justify-self: center;
-        align-self: center;
-    }
-    .menuhamburguesa {
-        .fas {
-            color: $back;
-            size: 30px 30px;
-        }
-    }
-    ._layer {
-        color: $back;
-        margin-bottom: 4px;
-        border-radius: 2px;
-        width: 28px;
-        height: 4px;
-        opacity: 1;
-    }
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: none;
-        background-color: $back;
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        overflow-y: scroll;
-        position: fixed;
-        top: 0;
-        transform: translate3d(0px, -100%, 0px);
-        transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-        width: 100%;
-        z-index: 1001;
-    }
-    .contenedorcontacto {
-        grid-area: "contenedorcontacto";
-    }
-    .cta button {
-        margin: 15px;
-        padding: 4px 12px;
-        font-size: $font-p;
-    }
-}
+            @import"components/colors";
+            @import"components/tipos";
+            @import"components/button";
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: none;
+            }
+            /*HEADER*/
+            
+            header {
+                display: grid;
+                height: 110px;
+                position: sticky;
+                scroll-behavior: smooth;
+                grid-template-areas: "contenedorlogo contenedornav contenedorcontacto";
+            }
+            
+            .header {
+                background-color: $white;
+                box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+                position: fixed;
+                width: 100%;
+                z-index: 3;
+            }
+            /*LOGO*/
+            
+            .contenedorlogo {
+                margin-top: 15px;
+                justify-self: center;
+                align-self: center;
+                padding: 1.6rem;
+            }
+            /*NAVEGADOR*/
+            
+            .contenedornav {
+                justify-self: center;
+                align-self: center;
+            }
+            
+            .contenedornav {
+                align-self: center;
+                list-style: none;
+                .navbar li {
+                    display: inline-block;
+                    padding: 20px 30px;
+                    a {
+                        color: #1e1e1e;
+                        font-size: $font;
+                        font-style: none;
+                        transition: all 0.3s ease 0s;
+                    }
+                    a:hover {
+                        color: $hover;
+                    }
+                }
+            }
+            
+            .menuhamburguesa {
+                .fas {
+                    color: $white
+                }
+            }
+            /*BOTONCONTACTO*/
+            
+            .contenedorcontacto {
+                justify-self: center;
+                align-self: center;
+                button {
+                    padding: 9px 25px;
+                    background-color: $back;
+                    color: $white;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+            
+            button:hover {
+                background-color: $hover;
+                color: $white;
+            }
+            
+            @media only screen and (max-width:767px) {
+                header {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: "contenedornav contenedorlogo contenedorcontacto";
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                }
+                .contenedorlogo {
+                    grid-area: contenedorlogo;
+                    justify-self: center;
+                    align-self: center;
+                    padding: 1.6rem;
+                }
+                .contenedornav {
+                    justify-self: center;
+                    align-self: center;
+                }
+                .menuhamburguesa {
+                    .fas {
+                        color: $back;
+                        size: 30px 30px;
+                    }
+                }
+                ._layer {
+                    color: $back;
+                    margin-bottom: 4px;
+                    border-radius: 2px;
+                    width: 28px;
+                    height: 4px;
+                    opacity: 1;
+                }
+                .navbar {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: none;
+                    background-color: $back;
+                    bottom: 0;
+                    height: 100%;
+                    left: 0;
+                    overflow-y: scroll;
+                    position: fixed;
+                    top: 0;
+                    transform: translate3d(0px, -100%, 0px);
+                    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+                    width: 100%;
+                    z-index: 1001;
+                }
+                .contenedorcontacto {
+                    grid-area: "contenedorcontacto";
+                }
+                .cta button {
+                    margin: 15px;
+                    padding: 4px 12px;
+                    font-size: $font-p;
+                }
+            }
+            
+            a {
+                color: #000;
+            }

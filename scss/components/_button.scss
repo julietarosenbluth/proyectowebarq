@@ -7,9 +7,9 @@
     background-color: none;
 }
 
-.flotante,
+.up,
 .bot,
-.ct {
+.a {
     position: absolute;
 }
 
@@ -26,8 +26,8 @@
 
 .bot {
     z-index: 999;
-    width: 43px;
-    height: 43px;
+    width: 35px;
+    height: 35px;
     background: $hover;
     border-radius: 100%;
     transition: all 0.5s ease-in-out;
@@ -55,12 +55,12 @@
     background: $white;
 }
 
-.ct {
+.a {
     transform: translateY (10%);
     opacity: 0;
     top: 13px;
     left: -50px;
-    transition: all0.5s ease-in-out;
+    transition: all.5s ease-in-out;
     background: $white;
     width: 150px;
     border-radius: 5px;
@@ -68,7 +68,7 @@
     box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.ct a {
+.a {
     text-align: center;
     display: block;
     margin: 20px 0;
@@ -77,7 +77,7 @@
     text-transform: uppercase;
 }
 
-#toggle:checked~.ct {
+#toggle:checked~.a {
     opacity: 1;
     transform: translateY(10%);
 }

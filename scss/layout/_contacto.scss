@@ -82,6 +82,7 @@ textarea {
     width: 70%;
     border: none;
     padding-left: 150px;
+    padding-bottom: 30px;
     input {
         padding: 9px 25px;
         background-color: $back;
@@ -91,4 +92,9 @@ textarea {
         cursor: pointer;
         transition: all 0.3s ease 0s;
     }
+}
+
+input:hover {
+    background-color: $hover;
+    color: $white;
 }

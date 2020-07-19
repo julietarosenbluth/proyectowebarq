@@ -15,42 +15,19 @@
 </head>
 
 <!--NAVEGADOR-->
-<header>
-
-    <div class="contenedorlogo">
-        <img class="logo" src="./img/AA-02.png" alt="logo">
-
-    </div>
-
-    <nav class="contenedornav">
-        <div class="menuhamburguesa">
-            <a href="#menu"><i class="fas fa-bars"></i></a>
-
-            <div class="_layer-top"></div>
-            <div class="_layer-mid"></div>
-            <div class="_layer-bottom"></div>
-
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <div class="contenedorcontacto">
-        <a class="cta " href="#contacto"><button>Contacto</button></a>
-
-
-    </div>
-
-
-
+<header class="header">
+    <img class="logo" src="./img/AA-02.png" alt="logo">
+    <input class="menu-btn" type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+        <li><a href="#equipo ">Equipo</a></li>
+        <li><a href="#proyectos ">Proyectos</a></li>
+        <li><a href="#contacto ">Contacto</a></li>
+    </ul>
 </header>
+
+
+
 
 <div class="container">
 
@@ -249,8 +226,13 @@
                 <a href="https://www.facebook.com/rosenblutharquitectos" class="fab fa-facebook-f" target="_blank">
                 </a>
                 <a href="https://www.instagram.com/rosenbluth_arquitectos" class="fab fa-instagram" target="_blank"></a>
-            </div>
 
+                <div class="up">
+                    <input type="checkbox" id="toggle">
+                    <label for="toggle" class="bot"></label>
+                    <a href="#inicio">Ir Arriba</a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
