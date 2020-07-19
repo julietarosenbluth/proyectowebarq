@@ -20,9 +20,11 @@
 /* slider */
 .container {
   display: flex;
-  position: relative;
-  padding-top: 200px; }
+  justify-self: center;
+  align-content: center;
+  padding-bottom: 100px; }
   .container .carousel img {
+    padding-top: 100px;
     max-width: 100%;
     height: auto;
     object-fit: fill; }
@@ -51,22 +53,18 @@
 /*SECCIÓN EQUIPO*/
 #equipo {
   width: 100%; }
+  #equipo .animate__animated {
+    font-size: 36px;
+    text-align: center;
+    color: #46587f;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase; }
 
 .contenedorequipo {
   background: #ffffff;
   width: 100%;
-  height: 800px;
-  padding-bottom: 50px;
   --animate-duration: 3s; }
-
-h2 {
-  font-size: 36px;
-  text-align: center;
-  color: #46587f;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  padding-top: 200px;
-  text-transform: uppercase; }
 
 .flexequipo {
   display: flex;
@@ -257,11 +255,13 @@ h3 {
 /*pruebagridbootstrap*/
 .container {
   display: grid;
-  grid-row: auto; }
+  grid-row: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
   .container .img {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    padding-bottom: 80px; }
 
 h2 {
   font-size: 36px;
@@ -270,7 +270,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 180px;
   text-align: center; }
 
 .animate__animated.animate__pulse {
@@ -356,7 +356,7 @@ textarea {
     cursor: pointer;
     transition: all 0.3s ease 0s; }
 
-input:hover {
+.boton input:hover {
   background-color: #93a2b6;
   color: #ffffff; }
 
@@ -405,7 +405,7 @@ a {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px 100px; }
+  padding: 10px 140px; }
 
 /* menu */
 .header .menu {
