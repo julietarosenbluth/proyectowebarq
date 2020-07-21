@@ -307,12 +307,6 @@ h3 {
 .container img:hover {
   opacity: 0.5; }
 
-.hover p {
-  color: #ffffff;
-  text-shadow: 1px 1px 1px black;
-  font-size: 10px;
-  text-transform: uppercase; }
-
 h2 {
   font-size: 36px;
   text-transform: uppercase;
