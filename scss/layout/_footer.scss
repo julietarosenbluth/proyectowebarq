@@ -21,8 +21,7 @@
  .footer-left {
      padding: 15px;
      position: relative;
-     top: 15px;
-     left: 80px;
+     left: 70px;
      .logo {
          padding-top: 10px;
      }
@@ -61,11 +60,13 @@
      display: flex;
      flex-direction: column;
      .social a {
-         font-size: 24px;
-         color: $back;
+         height: 30px;
+         width: 30px;
+         text-align: center;
          padding: 10px;
-         padding-bottom: 10px;
-         padding-right: 10px;
+         margin: 0px 5px;
+         font-size: $sub;
+         color: $back;
          text-decoration: none;
      }
  }
@@ -81,54 +82,72 @@
  
  .social a:hover {
      background: $hover;
+     border-radius: 50%;
+     text-align: center;
+     height: 50px;
+     width: 50px;
+     padding: 10px;
+     margin: 0px 5px;
+     transition: background .4s;
  }
+ /*footer 2*/
  
- @media only screen and (max-width:767px) {
-     .footer {
-         display: flex;
-         flex-direction: row;
-         height: 200px;
-         width: 100%;
-         padding: 15px;
-         background-color: $footer;
-         .footer-left {
+ .footer2 {
+     background-color: $back;
+     display: flex;
+     .derechos {
+         justify-self: right;
+     }
+     p {
+         font-size: $font-p;
+         color: $hover;
+         padding-left: 500px;
+         padding-top: 10px;
+     }
+     @media only screen and (max-width:767px) {
+         .footer {
              display: flex;
-             flex-direction: column;
-             padding: 0px;
-             top: 15px;
-             .logo {
-                 display: none;
-             }
-             .logo2 {
-                 display: inline-block;
+             flex-direction: row;
+             height: 200px;
+             width: 100%;
+             padding: 15px;
+             background-color: $footer;
+             .footer-left {
+                 display: flex;
+                 flex-direction: column;
+                 padding: 0px;
+                 top: 15px;
+                 .logo {
+                     display: none;
+                 }
+                 .logo2 {
+                     display: inline-block;
+                 }
              }
          }
      }
- }
- 
- .footer-right {
-     padding: 20px;
-     font-size: $foot;
-     text-align: 2;
-     display: flex;
-     flex-direction: column;
-     .social a {
-         font-size: 24px;
-         color: $back;
-         padding: 10px;
-         padding-bottom: 10px;
-         padding-right: 10px;
+     .footer-right {
+         padding: 20px;
+         font-size: $foot;
+         text-align: 2;
+         display: flex;
+         flex-direction: column;
+         .social a {
+             font-size: 24px;
+             color: $back;
+             padding: 10px;
+             padding-bottom: 10px;
+             padding-right: 10px;
+         }
      }
- }
- 
- .fab {
-     background-color: none;
-     padding-top: 10px;
-     text-align: center;
-     border-radius: 5px;
-     transition: 0.3s;
- }
- 
- .social a:hover {
-     background: $hover;
+     .fab {
+         background-color: none;
+         padding-top: 10px;
+         text-align: center;
+         border-radius: 5px;
+         transition: 0.3s;
+     }
+     .social a:hover {
+         background: $hover;
+     }
  }

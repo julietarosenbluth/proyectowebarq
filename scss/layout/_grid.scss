@@ -12,12 +12,14 @@
             }
             /*pruebagridbootstrap*/
             
-            .container1 {
+            .container {
                 display: grid;
                 grid-row: auto;
                 padding-left: 10px;
                 padding-right: 10px;
                 .img {
+                    display: block;
+                    position: relative;
                     width: 100%;
                     height: 100%;
                     padding-bottom: 50px;
@@ -25,17 +27,23 @@
             }
             
             .container img {
-                opacity: 1.0
+                opacity: 1.0;
             }
             
             .container img:hover {
                 opacity: 0.5;
             }
             
-            .hover p {
-                color: $white;
-                text-shadow: 1px 1px 1px black;
-                font-size: $font-p;
+            p {
+                display: block;
+                align-content: flex-start;
+                position: absolute;
+                bottom: -16px;
+                left: 0;
+                padding: 100px;
+                color: $black;
+                width: 100%;
+                font-size: $font;
                 text-transform: uppercase;
             }
             
