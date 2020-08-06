@@ -13,7 +13,12 @@
     text-transform: uppercase;
     font-size: $sub;
     color: $back;
-    padding-bottom: 5px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form {
@@ -23,11 +28,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
     .suscripcion {
         p {
             font-size: $subtitle;
             align-items: center;
-            padding-left: 40px;
+            justify-content: center;
+            margin: 0;
+            padding-left: 20px;
             padding-bottom: 40px;
             color: $black;
         }
@@ -39,17 +47,11 @@
     width: 100%;
     position: relative;
     color: $black;
-    label {
-        color: $back;
-        font-size: $foot;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-    }
 }
 
 input {
-    font-size: $font;
+    font-size: $subtitle;
+    color: $black;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;

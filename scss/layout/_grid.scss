@@ -1,49 +1,112 @@
-            @import"components/colors";
-            @import"components/tipos";
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                background-color: none;
-            }
-            
-            #proyectos {
-                width: 100%;
-            }
-            /*pruebagridbootstrap*/
-            
-            .container {
-                display: grid;
-                grid-row: auto;
-                padding-left: 10px;
-                padding-right: 10px;
-                .img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    padding-bottom: 50px;
-                }
-            }
-            
-            .container img {
-                opacity: 1.0;
-            }
-            
-            .container img:hover {
-                opacity: 0.5;
-            }
-            
-            h2 {
-                font-size: $title;
-                text-transform: uppercase;
-                color: $back;
-                font-family: $family;
-                font-weight: 900;
-                padding-top: 50px;
-                padding-bottom: 180px;
-                text-align: center;
-            }
-            
-            .animate__animated.animate__pulse {
-                --animate-duration: 3s;
-            }
+    @import"components/colors";
+    @import"components/tipos";
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: none;
+    }
+    /*gridgallery*/
+    
+    #proyectos {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    
+    .main {
+        display: grid;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-top: 0;
+    }
+    
+    .main h2 {
+        font-size: $title;
+        text-transform: uppercase;
+        color: $back;
+        font-family: $family;
+        font-weight: 900;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    
+    .main .gallery {
+        position: relative;
+        height: auto;
+        width: 90%;
+        margin: auto;
+        padding: 45px 0;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 2vh;
+        grid-auto-flow: dense;
+    }
+    
+    .main .gallery .img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .main .gallery .img:first-child {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    
+    .main .gallery .img:nth-child(2n+3) {
+        grid-row-start: span 2;
+    }
+    
+    .main .gallery .img:nth-child(4n+5) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    
+    .main .gallery .img:nth-child(6n+7) {
+        grid-row-start: span 1;
+    }
+    
+    .main .gallery .img:nth-child(8n+9) {
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+    
+    .main .gallery .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 1.0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .main .gallery .img:hover img {
+        opacity: 0.5;
+    }
+    
+    .animate__animated.animate__pulse {
+        --animate-duration: 3s;
+    }
+    
+    @media only screen and (max-width:767px) {
+        .main .gallery {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .main .gallery .img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 2% 0;
+            opacity: 1.0;
+            transition: 0.3s ease-in-out;
+        }
+        .main .gallery .img img {
+            display: block;
+        }
+        .main .gallery .img:hover img {
+            opacity: 0.5;
+        }
+    }
