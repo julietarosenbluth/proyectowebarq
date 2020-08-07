@@ -500,27 +500,25 @@ span {
   font-size: 24px;
   color: #46587f;
   margin: 0;
-  padding: 0;
-  padding-bottom: 7px;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .form {
-  height: 700px;
+  height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 60px; }
+  align-items: center; }
   .form .suscripcion p {
     font-size: 14px;
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding-left: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    padding-left: 10px;
     color: #000000; }
 
 .group {
