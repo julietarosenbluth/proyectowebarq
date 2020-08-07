@@ -167,8 +167,8 @@
                      .team {
                          display: block;
                          align-items: center;
-                         width: 330px;
-                         height: 350px;
+                         width: 360px;
+                         height: 370px;
                          background: $white;
                          position: relative;
                          transition: .6s ease-out;
@@ -206,6 +206,7 @@
                      .team .text {
                          position: relative;
                          padding-top: 200px;
+                         padding-right: 40px;
                          z-index: 3;
                          color: $white;
                          opacity: 0;
