@@ -509,7 +509,27 @@ span {
   .main .gallery .img img {
     display: block; }
   .main .gallery .img:hover img {
-    opacity: 0.5; } }
+    opacity: 0.5; }
+  .img:hover .overlay .overlaytext {
+    position: absolute;
+    padding: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s ease;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), #93a2b6);
+    opacity: 0.5; }
+  .overlaytext h4 {
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase; }
+  .subtext {
+    font-size: #F6F5F5;
+    text-align: center; } }
 
 * {
   margin: 0;
