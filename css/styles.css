@@ -469,6 +469,29 @@ span {
 .main .gallery .img:hover img {
   opacity: 0.5; }
 
+.img:hover .overlay .overlaytext {
+  position: absolute;
+  padding: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .3s ease;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), #93a2b6);
+  opacity: 0.5; }
+
+.overlaytext h4 {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase; }
+
+.subtext {
+  font-size: 14px;
+  text-align: center; }
+
 .animate__animated.animate__pulse {
   --animate-duration: 3s; }
 
@@ -620,7 +643,7 @@ a {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px;
+  padding: 20px;
   padding-left: 80px; }
 
 /* menu */
@@ -699,6 +722,6 @@ a {
   list-style: none;
   overflow: hidden;
   background-color: none;
-  padding-top: 0px;
+  padding-top: 10px;
   padding-left: 0px;
   padding-right: 80px; }
